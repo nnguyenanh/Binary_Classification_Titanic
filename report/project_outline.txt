@@ -1,0 +1,65 @@
+I. PREPROCESSING
+
+    a. Drop Irrelevant Features 1:
+        - 'PassengerId'
+        - 'Name'
+        - 'Ticket'
+        - 'Cabin'
+        - 'Embarked'
+    
+    b. Encode Categorial Features:
+        Sex:
+            - Male   = 1
+            - Female = 0
+    
+    c. Handle Missing Values:
+        by model (Random Forest)
+
+    d. Feature Engineering:
+        - 'FamilySize': SibSp + Parch + 1
+        - 'IsAlone'   : 
+            if FamilySize == 1 -> 1
+            if FamilySize > 1 -> 0 
+
+    e. Drop Irrelevant Features 2:
+        - 'SibSp'
+        - 'Parch'
+
+
+II. MODELS
+
+    a. Decision Tree
+
+    b. Random Forests
+
+    c. Gradient Boosting
+
+
+III. OUTPUTS: 
+
+    a. Correlation Heatmap
+
+    b. Features Importance
+
+    c. Confusion Matrix
+
+    d. ROC Curves and AUC
+
+
+IV. FILES AND DEPENDENCIES
+
+    a. Files:
+        main.py
+        preprocessing_titanic.py
+        trainning_models.py
+        plotting_statistics.py
+
+    b. Dependencies
+        --------------- -----------
+        Package         Version
+        --------------- -----------
+        matplotlib      3.10.6
+        numpy           2.3.2
+        pandas          2.3.2
+        scikit-learn    1.7.2
+        --------------- -----------
